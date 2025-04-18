@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Suspicious Activity - National Anti-Terrorism Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <h1>National Security Agency</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="report.html" class="active">Report</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="mobile-menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Report Suspicious Activity</h1>
+    <p>Your vigilance helps keep our nation safe</p>
+  </section>
+
+  <section class="section container">
+    <div class="report-container">
+      <div class="report-info">
+        <h2>How to Recognize Suspicious Activity</h2>
+        <p>Being aware of potential threats is the first step in preventing terrorism. Here are some signs to watch for:</p>
+        <ul>
+          <li><strong>Surveillance:</strong> Someone recording or monitoring activities, taking notes, using cameras, maps, or binoculars near key facilities</li>
+          <li><strong>Elicitation:</strong> People or organizations attempting to gain information about military operations, capabilities, or people</li>
+          <li><strong>Tests of Security:</strong> Attempts to measure reaction times to security breaches or to penetrate physical security barriers</li>
+          <li><strong>Acquiring Supplies:</strong> Purchasing or stealing explosives, weapons, ammunition, etc.</li>
+          <li><strong>Suspicious Persons:</strong> People who don't seem to belong in the workplace, neighborhood, business establishment, or anywhere else</li>
+        </ul>
+        <p>If you see something, say something. Your report could save lives.</p>
+      </div>
+
+      <form id="reportForm" class="report-form">
+        <h2>File a Report</h2>
+        
+        <div class="form-group">
+          <label for="reportType">Type of Report</label>
+          <select id="reportType" required>
+            <option value="">Select report type</option>
+            <option value="suspicious-activity">Suspicious Activity</option>
+            <option value="terrorist-threat">Terrorist Threat</option>
+            <option value="cyber-threat">Cyber Threat</option>
+            <option value="weapons">Suspicious Weapons Purchase</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="location">Location</label>
+          <input type="text" id="location" placeholder="Where did this occur?" required>
+        </div>
+
+        <div class="form-group">
+          <label for="dateTime">Date and Time</label>
+          <input type="datetime-local" id="dateTime" required>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" rows="5" placeholder="Please provide as much detail as possible: who, what, when, where, why, and how" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="contactInfo">Your Contact Information (Optional)</label>
+          <input type="text" id="contactInfo" placeholder="Phone or email if we need to follow up">
+          <small>Providing contact information helps us follow up if we need more details</small>
+        </div>
+
+        <div class="form-group">
+          <input type="checkbox" id="anonymous" name="anonymous">
+          <label for="anonymous">Submit anonymously</label>
+        </div>
+
+        <button type="submit" class="btn">Submit Report</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="section container">
+    <h2>Emergency Reporting</h2>
+    <div class="emergency-grid">
+      <div class="emergency-card">
+        <h3>Immediate Threat</h3>
+        <p>If you believe there is an immediate threat to life or property</p>
+        <button onclick="window.location.href='tel:080011111'">Call Emergency Hotline</button>
+      </div>
+      <div class="emergency-card">
+        <h3>In-Person Report</h3>
+        <p>Visit your nearest security office to file a report in person</p>
+        <button onclick="window.location.href='contact.html#locations'">Find Nearest Office</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content container">
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Contact Info</h3>
+            <p>Email: info@antiterrorism.gov</p>
+            <p>Hotline: 0800-111-11</p>
+            <p>Headquarters: 123 Security Ave, Capital City</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2023 National Anti-Terrorism Agency. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Anti-Terrorism Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>National Security Agency</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="report.html">Report</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Protecting Our Nation from Terrorism</h1>
+            <p>We are committed to ensuring the safety and security of our citizens through information and awareness.</p>
+            <a href="report.html" class="btn">Report Suspicious Activity</a>
+        </div>
+    </section>
+
+    <section class="section container">
+        <h2>Our Mission</h2>
+        <p>Our agency is dedicated to empowering citizens with knowledge and awareness to combat terrorism and safeguard our nation. Through comprehensive resources, expert insights, and critical thinking tools, we aim to foster resilience against extremist ideologies. By promoting unity, vigilance, and informed action, we strive to build a safer future for all. Together, we stand strong against threats to our security and values. Education is our strongest defense.</p>
+    </section>
+
+    <section class="section container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card" onclick="window.location.href='services.html#intelligence'">
+                <h3>Intelligence</h3>
+                <p>Current terrorism threats and analysis.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service-card" onclick="window.location.href='services.html#operations'">
+                <h3>Counter-Terrorism Operations</h3>
+                <p>Historical operations and their outcomes.</p>
+                <button>Learn More</button>
+            </div>
+            <div class="service-card" onclick="window.location.href='services.html#awareness'">
+                <h3>Public Awareness</h3>
+                <p>Educational resources for citizens.</p>
+                <button>Learn More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="section container">
+        <h2>Emergency Contacts</h2>
+        <div class="emergency-grid">
+            <div class="emergency-card">
+                <h3>National Anti-Terrorism Hotline</h3>
+                <p><strong>24/7 Hotline:</strong> 0800-111-11</p>
+                <button onclick="window.location.href='tel:080011111'">Call Now</button>
+            </div>
+            <div class="emergency-card">
+                <h3>Quick Report</h3>
+                <p>Report suspicious activity immediately</p>
+                <button onclick="window.location.href='report.html'">File Report</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="report.html">Report</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p>Email: info@antiterrorism.gov</p>
+                <p>Hotline: 0800-111-11</p>
+                <p>Headquarters: 123 Security Ave, Capital City</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 National Anti-Terrorism Agency. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
